@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+    <title>myGym</title>
+    <style>
+        body {
+            background-image: url('bodybuilder.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 120.5%;
+        }
+
+        .Link {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Remove blue color and underline */
+        .Link a {
+            color: white;
+            text-decoration: none;
+        }
+
+        ul {
+            overflow: auto;
+            padding: 0;
+            margin: 0;
+        }
+
+        .first {
+            text-align: center;
+            font-family: 'Balsamiq Sans', cursive;
+            font-size: large;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            text-align: center;
+            font-family: 'Balsamiq Sans', cursive;
+            color: white;
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .border-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 70vh;
+            width: 70vh;
+            border: 2px solid rgb(139, 139, 139);
+            box-sizing: border-box;
+            margin-left: 185px;
+            margin-top: 100px;
+            border-radius: 25px;
+        }
+
+        .border-content {
+            padding-top: 3px;
+            font-family: 'Balsamiq Sans', cursive;
+            color: white;
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .input-container input {
+            padding: 10px;
+            width: 250px;
+            height: 20px;
+            font-size: 18px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            text-align: center;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+
+        .input-container input:focus::placeholder {
+            color: transparent;
+        }
+
+        .input-container.age {
+            margin-top: 15px;
+        }
+
+        .input-container.submit {
+            margin-top: 20px;
+        }
+
+        .input-container.submit button {
+            padding: 12px 24px;
+            font-size: 20px;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="gym.png" alt="gym logo">
+            <div>Abmax Fitness</div>
+        </div>
+        <ul class="first">
+            <li class="Link">
+                <a href="AboutUs.html">About Us</a>
+            </li>
+            <li class="Link">
+                <a href="FitnessCalculator.html">Fitness Calculator</a>
+            </li>
+            <li class="Link">
+                <a href="ContactUs.html">Contact Us</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="border-container">
+        <div class="border-content">
+            <h3>Join the best gym of Lahore now</h3>
+        </div>
+        <div class="input-container">
+            <input type="text" id="nameInput" placeholder="Enter your name">
+        </div>
+        <div class="input-container age">
+            <input type="text" id="ageInput" placeholder="Enter your age">
+        </div>
+        <div class="input-container age">
+            <input type="text" id="GenderInput" placeholder="Enter your gender">
+        </div>
+        <div class="input-container age">
+            <input type="text" id="EmailInput" placeholder="Enter your email">
+        </div>
+        <div class="input-container age">
+            <input type="text" id="PhoneInput" placeholder="Enter your phone number">
+        </div>
+        <div class="input-container submit">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+<!-- 
+.hire-button a {
+    display: inline-block;
+    color: #306bce;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #306bce;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-left: 100px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hire-button a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #306bce;
+    transition: width 1s, color 1s;
+    z-index: -1;
+}
+
+.hire-button a:hover::before {
+    width: 100%;
+}
+
+.hire-button a:hover {
+    color: #081b29;
+} -->
